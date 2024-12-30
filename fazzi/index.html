@@ -4,52 +4,77 @@
     <title>~/startpage 💤</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="../src/css/style.css" rel="stylesheet"/>
+    <link href="/home/sanu/.config/startpage/css/style.css" rel="stylesheet" />
   </head>
-
   <body class="fazzi">
+    <!-- Image Section -->
     <div id="image" onclick="nextImage()">
-      <img id="carouselImage" src="../src/images/cover1.webp" />
+      <img
+        id="carouselImage"
+        src="files:///home/sanu/.config/startpage/images/cover1.webp"
+        alt="Startpage Carousel"
+      />
     </div>
+
+    <!-- Text Section -->
     <div id="text">
       <div id="greeting">Welcome $HOME, Sanu!</div>
       <div id="date"></div>
+
+      <!-- Search Bar Section -->
+      <div id="search-bar">
+        <form action="https://www.google.com/search" method="get">
+          <input
+            type="text"
+            name="q"
+            placeholder="$Search"
+            aria-label="Go"
+          />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+
+      <!-- Links Section -->
       <div id="links">
+        <!-- General Links -->
         <div class="urls">
           <div class="header">~/general </div>
           <ul>
             <li><a href="https://google.com">Google</a></li>
             <li><a href="https://youtube.com">YouTube</a></li>
+            <li><a href="https://comick.io/">Comick</a></li>
             <li><a href="https://web.whatsapp.com/">WhatsApp</a></li>
             <li><a href="https://discord.com/channels/@me">Discord</a></li>
-            <li><a href="https://monkeytype.com/">MonkeyType</a></li>
             <li><a href="https://mail.google.com/mail/u/0/#inbox">Gmail</a></li>
           </ul>
         </div>
+
+        <!-- Development Links -->
         <div class="urls">
           <div class="header">~/devel </div>
           <ul>
             <li><a href="https://aur.archlinux.org/">AUR</a></li>
-            <li>
-              <a href="https://github.com/Hades-2701">GitHub</a>
-            </li>
+            <li><a href="https://github.com/Hades-2701">GitHub</a></li>
             <li><a href="https://gitlab.com/dashboard/projects">GitLab</a></li>
             <li><a href="https://leetcode.com/problemset/">LeetCode</a></li>
+            <li><a href="https://monkeytype.com/">MonkeyType</a></li>
             <li><a href="https://archlinux.org/">Arch</a></li>
           </ul>
         </div>
+
+        <!-- School Links -->
         <div class="urls">
           <div class="header">~/school 󰑴</div>
           <ul>
             <li><a href="https://allen.in/">Allen.in</a></li>
             <li><a href="https://www.office.com/?auth=2">Office</a></li>
-            <li>
-              <a href="https://www.pw.live/study/batches/study">PW</a>
-            </li>
+            <li><a href="https://www.pw.live/study/batches/study">PW</a></li>
             <li><a href="https://www.physicsandmathstutor.com/">P&MT</a></li>
             <li><a href="https://singlelogin.re">Z-Library</a></li>
           </ul>
         </div>
+
+        <!-- Reddit Links -->
         <div class="urls">
           <div class="header">~/reddit </div>
           <ul>
@@ -57,15 +82,14 @@
             <li><a href="https://reddit.com/r/unixporn/">r/unixporn</a></li>
             <li><a href="https://reddit.com/r/archlinux/">r/archlinux</a></li>
             <li><a href="https://www.reddit.com/r/JEENEETards/">r/JEENEETards</a></li>
-            <li>
-              <a href="https://www.reddit.com/r/MEDICOreTARDS/">r/MEDICOreTARDS </a>
-            </li>
+            <li><a href="https://www.reddit.com/r/MEDICOreTARDS/">r/MEDICOreTARDS</a></li>
           </ul>
         </div>
       </div>
     </div>
+
+    <!-- JavaScript -->
+    <script async src="/home/sanu/.config/startpage/js/date.js"></script>
+    <script async src="/home/sanu/.config/startpage/js/theme.js"></script>
   </body>
-  <script async src="../src/js/date.js"></script>
-  <script async src="../src/js/theme.js" currentIndex="0"></script>
-	
 </html>
